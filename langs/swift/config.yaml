@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/swift/syntaxes/swift.tmLanguage.json
+    - extensions/swift/syntaxes/swift.tmLanguage.json
 
 syntax:
   colors:
@@ -107,3 +107,11 @@ syntax:
     string.quoted.double.single-line.swift: s1
     support.variable.discard-value.swift: p0
     variable.parameter.function.swift: p1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

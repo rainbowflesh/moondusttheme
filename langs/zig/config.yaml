@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/ziglang/vscode-zig
   version: 0.6.8
   files:
-  - syntaxes/zig.tmLanguage.json
+    - syntaxes/zig.tmLanguage.json
 
 syntax:
   colors:
@@ -38,3 +38,11 @@ syntax:
     string.multiline.zig: s1
     string.quoted.double.zig: s1
     string.quoted.single.zig: s1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

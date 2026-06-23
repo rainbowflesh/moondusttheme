@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/bmalehorn/vscode-fish
   version: 2bdcfbea62cadc2a977eace3189d25b31df71e72
   files:
-  - syntaxes/fish.tmLanguage.json
+    - syntaxes/fish.tmLanguage.json
 
 syntax:
   colors:
@@ -18,3 +18,11 @@ syntax:
     string.quoted.single.fish: s1
     variable.language.fish: p1
     variable.other.normal.fish: p1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

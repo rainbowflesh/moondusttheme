@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/javascript/syntaxes/JavaScript.tmLanguage.json
+    - extensions/javascript/syntaxes/JavaScript.tmLanguage.json
 
 syntax:
   colors:
@@ -163,3 +163,11 @@ syntax:
     string.template.js: s1
     support.type.builtin.js: p0
     support.type.primitive.js: p0
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

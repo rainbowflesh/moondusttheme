@@ -39,7 +39,7 @@ import sade from "sade";
 import * as v from "valibot";
 import { darkColors, lightColors, sharedColors } from "./editor.js";
 import pkg from "./package.json" with { type: "json" };
-import { darkTheme, lightTheme } from "./theme.js";
+import { darkTheme, darkThemeVariableA, lightTheme } from "./theme.js";
 
 const SettingsSchema = v.object({
 	"files.associations": v.record(v.string(), v.string()),
@@ -133,6 +133,13 @@ const LangConfigSchema = v.object({
 									v.title("p1"),
 									v.description(
 										"Color for variables, identifiers, literals, and similar.",
+									),
+								),
+								v.pipe(
+									v.literal("p2"),
+									v.title("p2"),
+									v.description(
+										"Color for Number, Constant, Function Argument, Tag Attribute, Embedded.",
 									),
 								),
 								v.pipe(
@@ -354,10 +361,11 @@ async function handleBuild(o) {
 	const na = [
 		"Moondust: Near Side of the Moon",
 		"Moondust: Far Side of the Moon",
+		"Moondust: Apollo 17 in Shorty",
 	];
 
 	/** @type {Theme[]} */
-	const ta = [lightTheme(), darkTheme()];
+	const ta = [lightTheme(), darkTheme(), darkThemeVariableA()];
 
 	/** @type {Record<string, string>[]} */
 	const ca = [
@@ -368,6 +376,10 @@ async function handleBuild(o) {
 		{
 			...sharedColors(),
 			...darkColors(ta[1].editor),
+		},
+		{
+			...sharedColors(),
+			...darkColors(ta[2].editor),
 		},
 	];
 
@@ -769,6 +781,9 @@ function testLangs(tr, th, la, ga, et) {
 					case th.syntax.plain[1]:
 						cl = "p1";
 						break;
+					case th.syntax.plain[2]:
+						cl = "p2";
+						break;
 					case th.syntax.string[0]:
 						cl = "s0";
 						break;
@@ -829,7 +844,7 @@ function testLangs(tr, th, la, ga, et) {
 		const ec = `${ln.test}\n//# sourceURL=test.js`;
 
 		/** @type {r.Result<any>} */
-		const ef = r.safeNew(Function, "c0", "p0", "p1", "s0", "s1", ec);
+		const ef = r.safeNew(Function, "c0", "p0", "p1", "p2", "s0", "s1", ec);
 		if (ef.err) {
 			return r.err(new Error("Creating test", { cause: ef.err }));
 		}
@@ -940,6 +955,7 @@ function testLangs(tr, th, la, ga, et) {
 			tf("c0"),
 			tf("p0"),
 			tf("p1"),
+			tf("p2"),
 			tf("s0"),
 			tf("s1"),
 		);
@@ -1723,6 +1739,7 @@ function createThemes(na, ta, ca, la) {
 				c0: [],
 				p0: [],
 				p1: [],
+				p2: [],
 				s0: [],
 				s1: [],
 			};
@@ -1750,6 +1767,9 @@ function createThemes(na, ta, ca, la) {
 							break;
 						case "p1":
 							tc.settings.foreground = th.syntax.plain[1];
+							break;
+						case "p2":
+							tc.settings.foreground = th.syntax.plain[3];
 							break;
 						case "s0":
 							tc.settings.foreground = th.syntax.string[0];

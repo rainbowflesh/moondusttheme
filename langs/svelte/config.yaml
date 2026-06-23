@@ -4,8 +4,8 @@ grammar:
   project: https://github.com/sveltejs/language-tools
   version: extensions-109.6.0
   files:
-  - packages/svelte-vscode/syntaxes/postcss.src.yaml
-  - packages/svelte-vscode/syntaxes/svelte.tmLanguage.src.yaml
+    - packages/svelte-vscode/syntaxes/postcss.src.yaml
+    - packages/svelte-vscode/syntaxes/svelte.tmLanguage.src.yaml
 
 syntax:
   colors:
@@ -54,3 +54,11 @@ syntax:
     string.quoted.svelte: s1
     string.unquoted.svelte: s1
     text.svelte: s1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/ini/syntaxes/ini.tmLanguage.json
+    - extensions/ini/syntaxes/ini.tmLanguage.json
 
 syntax:
   colors:
@@ -17,3 +17,10 @@ syntax:
     punctuation.definition.string.end.ini: s0
     punctuation.separator.key-value.ini: p0
     source.ini: s1
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

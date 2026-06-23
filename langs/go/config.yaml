@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/go/syntaxes/go.tmLanguage.json
+    - extensions/go/syntaxes/go.tmLanguage.json
 
 syntax:
   colors:
@@ -60,3 +60,11 @@ syntax:
     string.quoted.double.go: s1
     string.quoted.raw.go: s1
     string.quoted.rune.go: s1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

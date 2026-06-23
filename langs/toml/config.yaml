@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/tamasfe/taplo
   version: release-even-better-toml-0.21.2
   files:
-  - editors/vscode/toml.tmLanguage.json
+    - editors/vscode/toml.tmLanguage.json
 
 syntax:
   colors:
@@ -22,3 +22,11 @@ syntax:
     support.type.property-name.array.toml: p1
     support.type.property-name.table.toml: p1
     support.type.property-name.toml: p1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

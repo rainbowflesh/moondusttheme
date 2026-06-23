@@ -32,6 +32,7 @@
 	"files": [
 		"dist/moondusttheme-far-side-of-the-moon.json",
 		"dist/moondusttheme-near-side-of-the-moon.json",
+		"dist/moondusttheme-apollo-17-in-shorty.json",
 		"docs/icon.png",
 		"CHANGELOG.md"
 	],
@@ -51,6 +52,11 @@
 				"label": "Moondust: Far Side of the Moon",
 				"uiTheme": "vs-dark",
 				"path": "./dist/moondusttheme-far-side-of-the-moon.json"
+			},
+			{
+				"label": "Moondust: Apollo 17 in Shorty",
+				"uiTheme": "vs-dark",
+				"path": "./dist/moondusttheme-apollo-17-in-shorty.json"
 			}
 		]
 	},

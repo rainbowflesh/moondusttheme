@@ -4,12 +4,12 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/yaml/syntaxes/yaml-1.0.tmLanguage.json
-  - extensions/yaml/syntaxes/yaml-1.1.tmLanguage.json
-  - extensions/yaml/syntaxes/yaml-1.2.tmLanguage.json
-  - extensions/yaml/syntaxes/yaml-1.3.tmLanguage.json
-  - extensions/yaml/syntaxes/yaml-embedded.tmLanguage.json
-  - extensions/yaml/syntaxes/yaml.tmLanguage.json
+    - extensions/yaml/syntaxes/yaml-1.0.tmLanguage.json
+    - extensions/yaml/syntaxes/yaml-1.1.tmLanguage.json
+    - extensions/yaml/syntaxes/yaml-1.2.tmLanguage.json
+    - extensions/yaml/syntaxes/yaml-1.3.tmLanguage.json
+    - extensions/yaml/syntaxes/yaml-embedded.tmLanguage.json
+    - extensions/yaml/syntaxes/yaml.tmLanguage.json
 
 syntax:
   colors:
@@ -37,6 +37,13 @@ syntax:
     source.yaml: s1
     storage.modifier.chomping-indicator.yaml: p0
 
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2
 test:
   # Skipping due to significant tokenization differences.
   skip: true

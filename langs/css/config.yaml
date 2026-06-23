@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/css/syntaxes/css.tmLanguage.json
+    - extensions/css/syntaxes/css.tmLanguage.json
 
 syntax:
   colors:
@@ -81,3 +81,11 @@ syntax:
     string.unquoted.attribute-value.css: s1
     support.constant.media.css: p0
     variable.parameter.url.css: s1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

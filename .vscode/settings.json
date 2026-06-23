@@ -28,5 +28,10 @@
 		"**/langs/yaml/sample*": "yaml",
 		"**/langs/xml/sample*": "xml",
 		"**/langs/zig/sample*": "zig"
-	}
+	},
+	"cSpell.words": [
+		"moondusttheme",
+		"Uhalin",
+		"vanyauhalin"
+	]
 }

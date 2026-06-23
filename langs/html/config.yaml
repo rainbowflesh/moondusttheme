@@ -4,8 +4,8 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/html/syntaxes/html-derivative.tmLanguage.json
-  - extensions/html/syntaxes/html.tmLanguage.json
+    - extensions/html/syntaxes/html-derivative.tmLanguage.json
+    - extensions/html/syntaxes/html.tmLanguage.json
 
 syntax:
   colors:
@@ -684,3 +684,11 @@ syntax:
     string.unquoted.html: s1
     text.html.basic: s1
     text.html.derivative: s1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

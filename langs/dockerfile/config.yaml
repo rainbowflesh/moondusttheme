@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/docker/syntaxes/docker.tmLanguage.json
+    - extensions/docker/syntaxes/docker.tmLanguage.json
 
 syntax:
   colors:
@@ -12,3 +12,11 @@ syntax:
     keyword.control.dockerfile: p0
     keyword.other.special-method.dockerfile: p0
     source.dockerfile: p1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

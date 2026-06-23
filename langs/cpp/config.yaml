@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/cpp/syntaxes/cpp.tmLanguage.json
+    - extensions/cpp/syntaxes/cpp.tmLanguage.json
 
 syntax:
   colors:
@@ -278,3 +278,11 @@ syntax:
     string.quoted.single.cpp: s1
     support.other.attribute.cpp: p0
     support.type.built-in.posix-reserved.pthread.cpp: p0
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

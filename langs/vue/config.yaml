@@ -4,12 +4,12 @@ grammar:
   project: https://github.com/vuejs/language-tools
   version: v2.2.6
   files:
-  - extensions/vscode/syntaxes/markdown-vue.json
-  - extensions/vscode/syntaxes/mdx-vue.json
-  - extensions/vscode/syntaxes/vue-directives.json
-  - extensions/vscode/syntaxes/vue-interpolations.json
-  - extensions/vscode/syntaxes/vue-sfc-style-variable-injection.json
-  - extensions/vscode/syntaxes/vue.tmLanguage.json
+    - extensions/vscode/syntaxes/markdown-vue.json
+    - extensions/vscode/syntaxes/mdx-vue.json
+    - extensions/vscode/syntaxes/vue-directives.json
+    - extensions/vscode/syntaxes/vue-interpolations.json
+    - extensions/vscode/syntaxes/vue-sfc-style-variable-injection.json
+    - extensions/vscode/syntaxes/vue.tmLanguage.json
 
 syntax:
   colors:
@@ -24,6 +24,13 @@ syntax:
     punctuation.definition.interpolation.end.html.vue: p0
     source.vue: p1
 
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2
 test:
   # Skipping due to significant tokenization differences.
   skip: true

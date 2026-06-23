@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/json/syntaxes/JSON.tmLanguage.json
+    - extensions/json/syntaxes/JSON.tmLanguage.json
 
 syntax:
   colors:
@@ -26,3 +26,11 @@ syntax:
     punctuation.support.type.property-name.end.json: p0
     source.json: s1
     string.json support.type.property-name.json: p1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

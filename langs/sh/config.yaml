@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/shellscript/syntaxes/shell-unix-bash.tmLanguage.json
+    - extensions/shellscript/syntaxes/shell-unix-bash.tmLanguage.json
 
 syntax:
   colors:
@@ -87,3 +87,11 @@ syntax:
     variable.other.normal.shell: p1
     variable.parameter.positional.all.shell: p1
     variable.parameter.positional.shell: p1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

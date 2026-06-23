@@ -4,8 +4,8 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/php/syntaxes/html.tmLanguage.json
-  - extensions/php/syntaxes/php.tmLanguage.json
+    - extensions/php/syntaxes/html.tmLanguage.json
+    - extensions/php/syntaxes/php.tmLanguage.json
 
 syntax:
   colors:
@@ -140,6 +140,13 @@ syntax:
     string.unquoted.nowdoc.php: s1
     support.function.construct.output.php: p0
 
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2
 test:
   # Skipping due to minor tokenization differences.
   skip: true

@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/withastro/language-tools
   version: astro-vscode@2.15.4
   files:
-  - packages/vscode/syntaxes/astro.tmLanguage.src.yaml
+    - packages/vscode/syntaxes/astro.tmLanguage.src.yaml
 
 syntax:
   colors:
@@ -24,3 +24,11 @@ syntax:
     string.template.astro: s1
     string.unquoted.astro: s1
     text.astro: s1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

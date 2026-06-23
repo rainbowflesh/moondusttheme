@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/python/syntaxes/MagicPython.tmLanguage.json
+    - extensions/python/syntaxes/MagicPython.tmLanguage.json
 
 syntax:
   colors:
@@ -86,3 +86,11 @@ syntax:
     string.regexp.quoted.multi.python: s1
     string.regexp.quoted.single.python storage.type.string.python: s0
     string.regexp.quoted.single.python: s1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

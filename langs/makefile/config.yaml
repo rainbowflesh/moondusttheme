@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/make/syntaxes/make.tmLanguage.json
+    - extensions/make/syntaxes/make.tmLanguage.json
 
 syntax:
   colors:
@@ -48,3 +48,11 @@ syntax:
     support.function.target.SECONDEXPANSION.makefile: p0
     support.function.target.SILENT.makefile: p0
     support.function.target.SUFFIXES.makefile: p0
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

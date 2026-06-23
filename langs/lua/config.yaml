@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/lua/syntaxes/lua.tmLanguage.json
+    - extensions/lua/syntaxes/lua.tmLanguage.json
 
 syntax:
   colors:
@@ -27,3 +27,11 @@ syntax:
     string.quoted.double.lua: s1
     string.quoted.other.multiline.lua: s1
     string.quoted.single.lua: s1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2

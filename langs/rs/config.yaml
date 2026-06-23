@@ -4,7 +4,7 @@ grammar:
   project: https://github.com/microsoft/vscode
   version: 1.97.2
   files:
-  - extensions/rust/syntaxes/rust.tmLanguage.json
+    - extensions/rust/syntaxes/rust.tmLanguage.json
 
 syntax:
   colors:
@@ -61,3 +61,11 @@ syntax:
     string.quoted.byte.raw.rust: p0
     string.quoted.double.rust: s1
     string.quoted.single.char.rust: s1
+
+    constant.numeric: p2
+    support.constant: p2
+    constant.character: p2
+    constant.escape: p2
+    keyword.other.unit: p2
+    keyword.other: p2
+    constant.language.boolean: p2
