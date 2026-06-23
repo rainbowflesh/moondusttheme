@@ -39,7 +39,13 @@ import sade from "sade";
 import * as v from "valibot";
 import { darkColors, lightColors, sharedColors } from "./editor.js";
 import pkg from "./package.json" with { type: "json" };
-import { darkTheme, darkThemeVariableA, lightTheme } from "./theme.js";
+import {
+	darkTheme,
+	darkThemeVariantA,
+	lightTheme,
+	lightThemeVariantA,
+	shadowOfSaturn,
+} from "./theme.js";
 
 const SettingsSchema = v.object({
 	"files.associations": v.record(v.string(), v.string()),
@@ -361,12 +367,21 @@ async function handleBuild(o) {
 	const na = [
 		"Moondust: Near Side of the Moon",
 		"Moondust: Far Side of the Moon",
+		"Moondust: Apollo 17 in Shorty Light",
 		"Moondust: Apollo 17 in Shorty",
+		"Moondust: Shadow Of Saturn",
 	];
 
 	/** @type {Theme[]} */
-	const ta = [lightTheme(), darkTheme(), darkThemeVariableA()];
+	const ta = [
+		lightTheme(),
+		darkTheme(),
+		lightThemeVariantA(),
+		darkThemeVariantA(),
+		shadowOfSaturn(),
+	];
 
+	// dont forget register new theme in here
 	/** @type {Record<string, string>[]} */
 	const ca = [
 		{
@@ -379,7 +394,15 @@ async function handleBuild(o) {
 		},
 		{
 			...sharedColors(),
-			...darkColors(ta[2].editor),
+			...lightColors(ta[2].editor),
+		},
+		{
+			...sharedColors(),
+			...darkColors(ta[3].editor),
+		},
+		{
+			...sharedColors(),
+			...darkColors(ta[4].editor),
 		},
 	];
 
@@ -521,7 +544,7 @@ async function handconstest(wr, o) {
 	const na = ["Moondust: Cardboard Moon"];
 
 	/** @type {Theme[]} */
-	const ta = [lightTheme()];
+	const ta = [lightTheme(), lightThemeVariantA()];
 
 	/** @type {Record<string, string>[]} */
 	const ca = [{}];
@@ -1769,7 +1792,7 @@ function createThemes(na, ta, ca, la) {
 							tc.settings.foreground = th.syntax.plain[1];
 							break;
 						case "p2":
-							tc.settings.foreground = th.syntax.plain[3];
+							tc.settings.foreground = th.syntax.plain[2];
 							break;
 						case "s0":
 							tc.settings.foreground = th.syntax.string[0];

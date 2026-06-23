@@ -32,7 +32,9 @@
 	"files": [
 		"dist/moondusttheme-far-side-of-the-moon.json",
 		"dist/moondusttheme-near-side-of-the-moon.json",
+		"dist/moondusttheme-apollo-17-in-shorty-light.json",
 		"dist/moondusttheme-apollo-17-in-shorty.json",
+		"dist/moondusttheme-shadow-of-saturn.json",
 		"docs/icon.png",
 		"CHANGELOG.md"
 	],
@@ -54,9 +56,19 @@
 				"path": "./dist/moondusttheme-far-side-of-the-moon.json"
 			},
 			{
+				"label": "Moondust: Apollo 17 in Shorty Light",
+				"uiTheme": "vs",
+				"path": "./dist/moondusttheme-apollo-17-in-shorty-light.json"
+			},
+			{
 				"label": "Moondust: Apollo 17 in Shorty",
 				"uiTheme": "vs-dark",
 				"path": "./dist/moondusttheme-apollo-17-in-shorty.json"
+			},
+			{
+				"label": "Moondust: Shadow Of Saturn",
+				"uiTheme": "vs-dark",
+				"path": "./dist/moondusttheme-shadow-of-saturn.json"
 			}
 		]
 	},

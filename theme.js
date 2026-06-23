@@ -66,7 +66,69 @@ export function lightTheme() {
 	/** @type {ThemeSyntax} */
 	const syntax = {
 		comment: [gray[4]],
-		plain: [gray[5], gray[7]],
+		plain: [gray[5], gray[7], gray[5], gray[7]],
+		string: [blue[5], blue[7]],
+	};
+
+	/** @type {Theme} */
+	const theme = {
+		editor,
+		syntax,
+	};
+
+	return theme;
+}
+
+/**
+ * Apollo 17 in Shorty Light, variant of the light theme.
+ * @returns {Theme}
+ */
+export function lightThemeVariantA() {
+	/** @type {string[]} */
+	const gray = [
+		"#F6F7F8",
+		"#E8EBED",
+		"#D7DCDF",
+		"#B6BEC3",
+		"#8E979F",
+		"#71787F",
+		"#575E66",
+		"#434A51",
+		"#33383D",
+		"#24292D",
+	];
+
+	/** @type {string[]} */
+	const blue = [
+		"#F2F8FC",
+		"#E2EFF8",
+		"#BBD7EC",
+		"#8EBCE1",
+		"#65A4D7",
+		"#3882C2",
+		"#1F639E",
+		"#144B7B",
+		"#113C5F",
+		"#0E2E48",
+	];
+
+	/** @type {string[]} */
+	const tan = ["#d2b6a8", "#ebba8c"];
+
+	/** @type {ThemeEditor} */
+	const editor = {
+		background: "#FFFFFF",
+		neutral: gray,
+		accent: blue,
+		error: ["#B35900"],
+		info: [gray[4]],
+		warning: ["#7D4E00"],
+	};
+
+	/** @type {ThemeSyntax} */
+	const syntax = {
+		comment: [gray[4]],
+		plain: [gray[5], gray[7], tan[0], tan[1]],
 		string: [blue[5], blue[7]],
 	};
 
@@ -152,9 +214,10 @@ export function darkTheme() {
 }
 
 /**
+ * Apollo 17 in Shorty, variant of the dark theme.
  * @returns {Theme}
  */
-export function darkThemeVariableA() {
+export function darkThemeVariantA() {
 	/** @type {string[]} */
 	const gray = [
 		"#D2D4D5",
@@ -215,6 +278,61 @@ export function darkThemeVariableA() {
 		comment: [gray[3]],
 		plain: [gray[2], gray[1], tan[0], tan[1]],
 		string: [slate[2], slate[1]],
+	};
+
+	/** @type {Theme} */
+	const theme = {
+		editor,
+		syntax,
+	};
+
+	return theme;
+}
+
+/**
+ * Apollo 17 in Shorty, variant of the dark theme.
+ * @returns {Theme}
+ */
+export function shadowOfSaturn() {
+	/** @type {string[]} */
+	const gray = [
+		"#a89984",
+		"#928374",
+		"#7c6f64",
+		"#5a524c",
+		"#504945",
+		"#45403d",
+		"#3c3836",
+		"#3a3735",
+		"#32302f",
+		"#282828",
+		"#1b1b1b",
+	];
+
+	/** @type {string[]} */
+	const tan = ["#ddc7a1", "#af9c7c", "#70695b", "#a29174", "#b5977b"];
+
+	/** @type {string[]} */
+	const blue = ["#69a094", "#7daea3"];
+
+	/** @type {string[]} */
+	const green = ["#a8b665"];
+
+	/** @type {ThemeEditor} */
+	const editor = {
+		background: "#282828",
+		neutral: gray,
+		accent: gray,
+		error: [""],
+		info: [""],
+		warning: [""],
+	};
+
+	/** @type {ThemeSyntax} */
+	const syntax = {
+		comment: [gray[1]],
+		plain: [tan[1], tan[0], green[0]],
+		string: [blue[0], blue[1]],
 	};
 
 	/** @type {Theme} */
