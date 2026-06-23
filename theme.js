@@ -26,7 +26,7 @@
  */
 export function lightTheme() {
 	/** @type {string[]} */
-	let gray = [
+	const gray = [
 		"#F6F7F8",
 		"#E8EBED",
 		"#D7DCDF",
@@ -37,10 +37,10 @@ export function lightTheme() {
 		"#434A51",
 		"#33383D",
 		"#24292D",
-	]
+	];
 
 	/** @type {string[]} */
-	let blue = [
+	const blue = [
 		"#F2F8FC",
 		"#E2EFF8",
 		"#BBD7EC",
@@ -51,32 +51,32 @@ export function lightTheme() {
 		"#144B7B",
 		"#113C5F",
 		"#0E2E48",
-	]
+	];
 
 	/** @type {ThemeEditor} */
-	let editor = {
+	const editor = {
 		background: "#FFFFFF",
 		neutral: gray,
 		accent: blue,
 		error: ["#B35900"],
 		info: [gray[4]],
 		warning: ["#7D4E00"],
-	}
+	};
 
 	/** @type {ThemeSyntax} */
-	let syntax = {
+	const syntax = {
 		comment: [gray[4]],
 		plain: [gray[5], gray[7]],
 		string: [blue[5], blue[7]],
-	}
+	};
 
 	/** @type {Theme} */
-	let theme = {
+	const theme = {
 		editor,
 		syntax,
-	}
+	};
 
-	return theme
+	return theme;
 }
 
 /**
@@ -84,9 +84,9 @@ export function lightTheme() {
  */
 export function darkTheme() {
 	/** @type {string[]} */
-	let gray = [
+	const gray = [
 		"#D2D4D5",
-		"#B1B6B9",
+		"#c7cbcc",
 		"#89949A",
 		"#637179",
 		"#455259",
@@ -95,10 +95,10 @@ export function darkTheme() {
 		"#262C31",
 		"#22272B",
 		"#1E2225",
-	]
+	];
 
 	/** @type {string[]} */
-	let slate = [
+	const slate = [
 		"#B2D0EB",
 		"#8FAFCC",
 		"#6885A1",
@@ -109,10 +109,10 @@ export function darkTheme() {
 		"#222D39",
 		"#1F262E",
 		"#1E2329",
-	]
+	];
 
 	/** @type {string[]} */
-	let blue = [
+	const blue = [
 		"#4D8FDB",
 		"#3A82CF",
 		"#2C75C3",
@@ -123,30 +123,30 @@ export function darkTheme() {
 		"#133358",
 		"#112945",
 		"#10243C",
-	]
+	];
 
 	/** @type {ThemeEditor} */
-	let editor = {
+	const editor = {
 		background: "#161A1D",
 		neutral: gray,
 		accent: blue,
 		error: [""],
 		info: [""],
 		warning: [""],
-	}
+	};
 
 	/** @type {ThemeSyntax} */
-	let syntax = {
+	const syntax = {
 		comment: [gray[3]],
 		plain: [gray[2], gray[1]],
 		string: [slate[2], slate[1]],
-	}
+	};
 
 	/** @type {Theme} */
-	let theme = {
+	const theme = {
 		editor,
 		syntax,
-	}
+	};
 
-	return theme
+	return theme;
 }

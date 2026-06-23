@@ -4,11 +4,11 @@
  * @import {ThemeEditor} from "./theme.js"
  */
 
-import color from "color"
+import color from "color";
 
-const wh = "#FFFFFF"
-const tr = "#FFFFFF00"
-// const red = "#FF0000"
+const wh = "#FFFFFF";
+const tr = "#FFFFFF00";
+const red = "#FF0000";
 
 /**
  * @param {ThemeEditor} te
@@ -17,12 +17,12 @@ const tr = "#FFFFFF00"
 export function lightColors(te) {
 	return {
 		// Base colors
-		"focusBorder": te.accent[3],
-		"foreground": te.neutral[7],
+		focusBorder: te.accent[3],
+		foreground: te.neutral[7],
 		"widget.border": te.neutral[2],
 		"selection.background": te.accent[2],
-		"descriptionForeground": te.neutral[5],
-		"errorForeground": te.error[0],
+		descriptionForeground: te.neutral[5],
+		errorForeground: te.error[0],
 
 		// Text colors
 		"textLink.activeForeground": te.accent[5],
@@ -116,7 +116,7 @@ export function lightColors(te) {
 		// Debug Icons colors
 		"debugIcon.breakpointForeground": te.neutral[5],
 		"debugIcon.breakpointDisabledForeground": te.neutral[3],
-	}
+	};
 }
 
 /**
@@ -126,11 +126,11 @@ export function lightColors(te) {
 export function darkColors(te) {
 	return {
 		// Base colors
-		"focusBorder": te.accent[3],
-		"foreground": te.neutral[1],
+		focusBorder: te.accent[3],
+		foreground: te.neutral[1],
 		"widget.border": te.neutral[6],
 		"selection.background": te.accent[5],
-		"descriptionForeground": te.neutral[3],
+		descriptionForeground: te.neutral[3],
 
 		// Text colors
 		"textLink.activeForeground": te.accent[0],
@@ -201,7 +201,7 @@ export function darkColors(te) {
 		// Debug Icons colors
 		"debugIcon.breakpointForeground": te.neutral[3],
 		"debugIcon.breakpointDisabledForeground": te.neutral[5],
-	}
+	};
 }
 
 /**
@@ -573,7 +573,8 @@ export function sharedColors() {
 		"editorSuggestWidget.background": "editor.background",
 		"editorSuggestWidget.border": "widget.border",
 		"editorSuggestWidget.foreground": "editor.foreground",
-		"editorSuggestWidget.focusHighlightForeground": "list.focusHighlightForeground",
+		"editorSuggestWidget.focusHighlightForeground":
+			"list.focusHighlightForeground",
 		"editorSuggestWidget.highlightForeground": "list.highlightForeground",
 		"editorSuggestWidget.selectedBackground": "list.activeSelectionBackground",
 		"editorSuggestWidget.selectedForeground": "list.activeSelectionForeground",
@@ -998,5 +999,5 @@ export function sharedColors() {
 		// Comments View colors
 		// "commentsView.resolvedIcon"
 		// "commentsView.unresolvedIcon"
-	}
+	};
 }
