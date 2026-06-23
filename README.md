@@ -10,6 +10,10 @@ themself.
 
 ![Showcase of Near Side of the Moon](https://raw.githubusercontent.com/vanyauhalin/moondusttheme/refs/heads/main/docs/dark.webp)
 
+![Showcase of Apollo 17 in Shorty Light](./docs/Apollo_17_in_Shorty_Light.png)
+
+![Showcase of Apollo 17 in Shorty](./docs/Apollo_17_in_Shorty.png)
+
 Moondust is available on the [VSCode Marketplace], [Open VSX Registry], and
 [GitHub Releases]. Visit [moondustthe.me] to view more examples of syntax
 highlighting. Enjoy.
@@ -56,13 +60,10 @@ aesthetic preferences align closely.
 [VSCode Marketplace]: https://marketplace.visualstudio.com/items?itemName=vanyauhalin.moondusttheme
 [Open VSX Registry]: https://open-vsx.org/extension/vanyauhalin/moondusttheme/
 [GitHub Releases]: https://github.com/vanyauhalin/moondusttheme/releases/
-
 [moondustthe.me]: https://moondustthe.me/
-
 [A case against syntax highlighting]: https://www.linusakesson.net/programming/syntaxhighlighting/
 [Syntax highlighting is a waste of an information channel]: https://buttondown.email/hillelwayne/archive/syntax-highlighting-is-a-waste-of-an-information/
 [I am sorry, but everyone is getting syntax highlighting wrong]: https://tonsky.me/blog/syntax-highlighting/
-
 [Astro]: https://moondustthe.me/#astro
 [C]: https://moondustthe.me/#c
 [C++]: https://moondustthe.me/#cpp
@@ -96,10 +97,8 @@ aesthetic preferences align closely.
 [XML]: https://moondustthe.me/#xml
 [YAML]: https://moondustthe.me/#yaml
 [Zig]: https://moondustthe.me/#zig
-
 [initial phase]: https://github.com/primer/github-vscode-theme/discussions/341/
 [GitHub Theme]: https://github.com/primer/github-vscode-theme/
 [Monochrome]: https://github.com/anotherglitchinthematrix/monochrome/
-
 [Ivan Uhalin]: https://github.com/vanyauhalin/
 [MIT]: https://github.com/vanyauhalin/moondusttheme/blob/main/LICENSE/

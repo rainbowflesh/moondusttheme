@@ -15,11 +15,11 @@
 	],
 	"homepage": "https://moondustthe.me/",
 	"bugs": {
-		"url": "https://github.com/vanyauhalin/moondusttheme/issues/"
+		"url": "https://github.com/rainbowflesh/moondusttheme/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/vanyauhalin/moondusttheme.git"
+		"url": "git+https://github.com/rainbowflesh/moondusttheme.git"
 	},
 	"license": "MIT",
 	"author": {
