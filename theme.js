@@ -148,7 +148,7 @@ export function darkTheme() {
 	/** @type {string[]} */
 	const gray = [
 		"#D2D4D5",
-		"#c7cbcc",
+		"#B1B6B9",
 		"#89949A",
 		"#637179",
 		"#455259",
@@ -200,7 +200,7 @@ export function darkTheme() {
 	/** @type {ThemeSyntax} */
 	const syntax = {
 		comment: [gray[3]],
-		plain: [gray[2], gray[1], gray[2]],
+		plain: [gray[2], gray[1]],
 		string: [slate[2], slate[1]],
 	};
 
@@ -221,7 +221,7 @@ export function darkThemeVariantA() {
 	/** @type {string[]} */
 	const gray = [
 		"#D2D4D5",
-		"#c7cbcc",
+		"#B1B6B9",
 		"#89949A",
 		"#637179",
 		"#455259",

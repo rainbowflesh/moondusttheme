@@ -1,6 +1,6 @@
 {
-	"name": "moondusttheme",
-	"displayName": "Moondust Theme",
+	"name": "moondusttheme-fork",
+	"displayName": "Moondust Theme Fork",
 	"version": "0.11.0",
 	"description": "Handcrafted theme for those who have not found syntax highlighting useful for themself",
 	"categories": [
@@ -27,7 +27,7 @@
 		"email": "vanyauhalin@gmail.com",
 		"url": "https://vanyauhalin.me/"
 	},
-	"publisher": "vanyauhalin",
+	"publisher": "rainbowflesh",
 	"type": "module",
 	"files": [
 		"dist/moondusttheme-far-side-of-the-moon.json",
@@ -35,7 +35,7 @@
 		"dist/moondusttheme-apollo-17-in-shorty-light.json",
 		"dist/moondusttheme-apollo-17-in-shorty.json",
 		"dist/moondusttheme-shadow-of-saturn.json",
-		"docs/icon.png",
+		"docs/icon.jpg",
 		"CHANGELOG.md"
 	],
 	"scripts": {
@@ -91,5 +91,5 @@
 	"engines": {
 		"vscode": "^1.87.0"
 	},
-	"icon": "docs/icon.png"
+	"icon": "docs/icon.jpg"
 }
