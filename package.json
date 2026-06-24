@@ -1,8 +1,8 @@
 {
 	"name": "moondusttheme-fork",
 	"displayName": "Moondust Theme Fork",
-	"version": "0.11.0",
-	"description": "Handcrafted theme for those who have not found syntax highlighting useful for themself",
+	"version": "0.11.1",
+	"description": "Handcrafted theme for those who have found lesser syntax highlighting useful for themself",
 	"categories": [
 		"Themes"
 	],
